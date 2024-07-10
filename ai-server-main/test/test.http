@@ -1,0 +1,24 @@
+### Test API
+GET https://optosta.wisoft.io
+Accept: application/json
+
+###
+## "다낭성신장염,방광염",3+,-,-,-,-,1+,-,5,>1.03,3+
+#POST https://optosta.wisoft.io/predict
+POST http://localhost:10005/predict
+Content-Type: application/json
+Accept: application/json
+
+{
+  "blood": "3+",
+  "bilirubin": "-",
+  "urobilinogen": "-",
+  "ketones": "-",
+  "protein": "-",
+  "nitrite": "1+",
+  "glucose": "-",
+  "ph": "5",
+  "sg": ">1.03",
+  "leukocytes": "3+"
+}
+
